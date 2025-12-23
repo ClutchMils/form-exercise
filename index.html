@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>My test page</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        form{
+            display: inline-block;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #cccccc;
+            border-radius: 1em;
+        }
+
+        p + p {
+            margin-top: 1em;
+        }
+        label {
+            /* Uniform size for labels */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            /* To make sure that all text fields have the same font settings
+                By defauly, text areas have a monospace font */
+            font: 1em sans-serif;
+            width: 300px;
+            box-sizing: border-box;
+            /* Match form fields borders */
+        }
+    </style>
   </head>
   <body>
     <p>This is my page</p>
