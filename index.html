@@ -34,6 +34,27 @@
             box-sizing: border-box;
             /* Match form fields borders */
         }
+        input:focus, textarea:focus {
+            /* Set the outline width and style */
+            outline-style: solid;
+            /* To give a little highlight on active elements */
+            outline-color:black;
+        }
+        textarea {
+            /* Align multiple text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 5em;
+        }
+        .button {
+            /* Align buttons with text fields */
+            padding-left: 90px; /* same size as the label */
+        }
+        button {
+            /* This extra margin represents roughly the same space as the space 
+            between the lables and their textfields */
+            margin-left: 0.5em;
+        }
     </style>
   </head>
   <body>
@@ -51,6 +72,9 @@
             <label for="msg">Message:</label>
             <textarea id="msg" name="user_message"></textarea>
         </p>
+        <p class="button">
+			<button type="submit">Send your message</button>
+		</p>
     </form>
   </body>
 </html>
